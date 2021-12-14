@@ -1,3 +1,32 @@
-h1{
-font-family: 'Poppins', sans-serif;
+:root {
+  --primaryFont: "Raleway", sans-serif;
+  --primaryColour: #f7e8f6;
+}
+
+h1 {
+  font-family: var(--primaryFont);
+  font-size: 96px;
+}
+
+.hero {
+  background: var(--primaryColour);
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero p {
+  font-family: var(--primaryFont);
+  font-size: 36px;
+  font-weight: bold;
+}
+.hero h2 {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: var(--primaryFont);
+}
+.btn-light {
+  font-family: var(--primaryFont);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
