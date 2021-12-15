@@ -4,6 +4,7 @@
 }
 body {
   font-family: var(--primaryFont);
+  text-align: center;
 }
 h1 {
   font-size: 96px;
@@ -82,9 +83,32 @@ p {
   max-width: 350px;
   border-radius: 10px;
 }
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+nav a:hover {
+  color: var(--primaryColour);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
 @media (max-width: 777px) {
   .project-description {
-    padding: 0;
   }
   h1 {
     font-size: 44px;
