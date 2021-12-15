@@ -46,11 +46,12 @@ p {
   padding: 30px;
 }
 .content-container {
-  padding: 160px 20px;
+  padding: 30px 20px;
 }
 .content-container h1 {
   font-size: 64px;
   line-height: 50px;
+  padding: 0;
 }
 .content-container h2 {
   font-size: 18px;
@@ -83,15 +84,16 @@ p {
   border-radius: 10px;
 }
 .social-links {
-  font-size: 70px;
+  font-size: 40px;
   text-align: center;
 }
+
 footer i:hover {
   color: purple;
 }
 
 footer .social-links a {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 nav {
   padding: 20px 0;
