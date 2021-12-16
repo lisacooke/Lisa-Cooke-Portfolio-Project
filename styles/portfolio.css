@@ -1,12 +1,18 @@
 :root {
   --primaryFont: "Raleway", sans-serif;
-  --primaryColour: #f7e8f6;
+  --primaryColour: radial-gradient(
+    circle at 10% 20%,
+    rgba(91, 173, 254, 0.46) 0%,
+    rgba(91, 224, 254, 0.46) 47.2%,
+    rgba(170, 254, 235, 0.43) 90%
+  );
+  --secondFont: "Caveat", cursive;
+  --thirdFont: "Patrick Hand", cursive;
 }
-body {
-  font-family: var(--primaryFont);
-}
+
 h1 {
   font-size: 96px;
+  font-family: var(--secondFont);
 }
 
 h2 {
@@ -15,20 +21,28 @@ h2 {
 }
 p {
   font-size: 16px;
+  font-family: var(--primaryFont);
+}
+
+.nav {
+  border: black;
 }
 
 .hero {
   background: var(--primaryColour);
   text-align: center;
   padding: 160px 20px;
+  font-family: var(--primaryFont);
 }
 .hero p {
   font-size: 36px;
   font-weight: bold;
+  font-family: var(--primaryFont);
 }
 .hero h2 {
   font-size: 24px;
   font-weight: normal;
+  font-family: var(--primaryFont);
 }
 .btn-light {
   border-radius: 4px;
@@ -36,6 +50,7 @@ p {
   line-height: 27px;
   padding: 15px 30px;
   border: 1px solid var(--primaryColour);
+  font-family: var(--primaryFont);
 }
 .example-image {
   width: 400px;
@@ -44,29 +59,57 @@ p {
 .project-description {
   text-align: center;
   padding: 30px;
+  font-family: var(--primaryFont);
 }
 .content-container {
-  padding: 30px 20px;
+  padding: 40px 20px;
+  font-family: var(--primaryFont);
+  text-align: center;
+  font-weight: bold;
 }
 .content-container h1 {
   font-size: 64px;
   line-height: 50px;
   padding: 0;
+  font-family: var(--primaryFont);
 }
 .content-container h2 {
   font-size: 18px;
   line-height: 30px;
+  font-family: var(--primaryFont);
+}
+.contact {
+  padding: 20px 20px;
+  font-family: var(--primaryFont);
+  background: var(--primaryColour);
+  text-align: center;
+  font-weight: bold;
+  max-width: 10000px;
+}
+.contact h1 {
+  font-size: 64px;
+  line-height: 50px;
+  padding: 0;
+  font-family: var(--primaryFont);
+}
+.contact h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: var(--primaryFont);
 }
 .content {
   margin: 30px;
+  font-family: var(--primaryFont);
 }
 .content h1 {
   font-size: 64px;
   line-height: 80px;
   text-align: center;
+  font-family: var(--primaryFont);
 }
 .content h2 {
   font-size: 18px;
+  font-family: var(--thirdFont);
 }
 .content h3 {
   font-size: 24px;
@@ -74,10 +117,12 @@ p {
   margin: 20px 0 0;
   text-align: center;
   font-weight: bold;
+  font-family: var(--primaryFont);
 }
 .content p {
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
+  font-family: var(--thirdFont);
 }
 .me {
   max-width: 350px;
@@ -86,11 +131,37 @@ p {
 .social-links {
   font-size: 40px;
   text-align: center;
+  font-family: var(--primaryFont);
 }
 .image {
-  border-radius: 10px;
+  border-radius: 20px;
+  font-family: var(--primaryFont);
 }
 
+.touch {
+  font-family: var(--secondFont);
+  font-size: 80px;
+  text-align: center;
+}
+.look {
+  font-family: var(--secondFont);
+  font-size: 50px;
+  text-align: center;
+}
+.credit {
+  font-family: var(--thirdFont);
+}
+.please {
+  font-family: var(--thirdFont);
+  font-size: 35px;
+}
+.intro {
+  font-family: var(--secondFont);
+  font-size: 70px;
+}
+.weather-image {
+  max-width: 600px;
+}
 footer i:hover {
   color: purple;
 }
@@ -100,10 +171,12 @@ footer .social-links a {
 }
 nav {
   padding: 20px 0;
+  font-family: var(--thirdFont);
 }
 nav ul {
   padding: 0px;
   margin: 0px;
+  font-family: var(--thirdFont);
 }
 nav li {
   display: inline-block;
@@ -111,12 +184,14 @@ nav li {
   text-align: center;
   line-height: 20px;
   margin-left: 30px;
+  font-family: var(--thirdFont);
 }
 nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 30px;
+  font-family: var(--third);
 }
 nav a:hover {
   color: purple;
@@ -127,6 +202,9 @@ nav a:hover {
   h1 {
     font-size: 44px;
     line-height: 56px;
+  }
+  img {
+    display: none;
   }
   h2 {
     font-size: 44px;
