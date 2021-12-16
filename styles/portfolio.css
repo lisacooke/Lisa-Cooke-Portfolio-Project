@@ -87,6 +87,9 @@ p {
   font-size: 40px;
   text-align: center;
 }
+.image {
+  border-radius: 10px;
+}
 
 footer i:hover {
   color: purple;
@@ -121,8 +124,6 @@ nav a:hover {
   transition: all 100ms ease-in-out;
 }
 @media (max-width: 777px) {
-  .project-description {
-  }
   h1 {
     font-size: 44px;
     line-height: 56px;
